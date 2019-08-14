@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<config>
+	  <tabs>
+		<emizen translate="label" module="restrictmethod">
+            <label>Emizen</label>
+            <sort_order>0</sort_order>
+        </emizen>
+	  </tabs>
+	  <sections>
+		<restrictmethod  translate="label" module="restrictmethod">                    
+		<label>Enable IP Based Payment Method</label>
+		<tab>emizen</tab>
+		<frontend_type>text</frontend_type>
+		<sort_order>0</sort_order>
+		<show_in_default>1</show_in_default>
+		<show_in_website>1</show_in_website>
+		<show_in_store>1</show_in_store>            
+					<groups>
+				      <emizen translate="label"> 
+					  <label>Enable IP Based Payment Method</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>0</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <general translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </general>
+                             <ipaddress translate="label">
+                            <label>IP To Allow Payment Method</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Add multiple IPs comma seprated</comment>
+                          </ipaddress>
+                          <methods translate="label">
+                            <label>Payment Methods</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>restrictmethod/methods</source_model>
+                            <sort_order>14</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </methods>
+					   </fields>
+					   </emizen>
+					</groups>
+		</restrictmethod>
+	  </sections>
+</config>

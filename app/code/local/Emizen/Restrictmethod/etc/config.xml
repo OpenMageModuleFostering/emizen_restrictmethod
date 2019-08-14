@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Emizen_Restrictmethod>
+      <version>0.1.0</version>
+    </Emizen_Restrictmethod>
+  </modules>
+  <global>
+    <helpers>
+      <restrictmethod>
+        <class>Emizen_Restrictmethod_Helper</class>
+      </restrictmethod>
+    </helpers>
+     <models>
+      <restrictmethod>
+        <class>Emizen_Restrictmethod_Model</class>
+      </restrictmethod>
+    </models>
+  </global>
+  <frontend>
+        <events>
+            <payment_method_is_active>
+                <observers>
+                    <restrictmethod>
+                        <class>restrictmethod/observer</class>
+                        <method>paymentMethod</method>
+                    </restrictmethod>
+                </observers>
+            </payment_method_is_active>
+        </events>
+    </frontend>
+</config> 

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+    <name>Emizen_Restrictmethod</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Payment methods can be enabled for selected IPs though Methods are disabled in backend.</summary>
+    <description>&lt;p&gt;By using this extension you can enable any payment method for your selected IPs, you just need to put your IP in backend and select your desired payment method. &#xD;
+&lt;p /&gt;This will be useful for developers who working on checkout and want to test full order process, with the help of this extension developer can select his desired payment method and put his IP in  backend, it will enable accordingly. &lt;/p&gt;&#xD;
+&lt;h1&gt;Features:-&lt;/h1&gt;&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt;1. Enable payment method without knowing the world, you are testing something.&lt;/li&gt;&#xD;
+&lt;li&gt;2. Can save multiple IPs comma separated.&lt;/li&gt;&#xD;
+&lt;li&gt;3. Can be enable/disable from backend&lt;/li&gt;&#xD;
+&lt;/ul&gt;</description>
+    <notes>Payment methods can be enabled for selected IPs though Methods are disabled in backend.</notes>
+    <authors><author><name>Emizen Tech Private Limited</name><user>emizen</user><email>info@emizentech.com</email></author></authors>
+    <date>2015-08-04</date>
+    <time>07:58:57</time>
+    <contents><target name="magelocal"><dir><dir name="Emizen"><dir name="Restrictmethod"><dir><dir name="Helper"><file name="Data.php" hash="9aeffcc1bead875f9d7a4dd35870c182"/></dir><dir name="Model"><file name="Methods.php" hash="47aa6b588f27cfb473d8d30c8754e663"/><file name="Observer.php" hash="f7c5aeb3877f932a82994a9e510f1f16"/></dir><dir name="etc"><file name="adminhtml.xml" hash="b83b5015254b8f6747ad7abac04a63fd"/><file name="config.xml" hash="1216b2072922169337863bc17b114900"/><file name="system.xml" hash="6282fad6790ddb33050631d76f62ee1d"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir><dir name="modules"><file name="Emizen_Restrictmethod.xml" hash="8afbc09d3c0fdbbdaf5a8441444cda17"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

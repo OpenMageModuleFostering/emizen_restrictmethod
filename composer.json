@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Emizen_Restrictmethod",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Payment methods can be enabled for selected IPs though Methods are disabled in backend.",
+    "authors": [
+    {
+        "name": "Emizen Tech Private Limited",
+        "email": "info@emizentech.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
